@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <h1>Tic Tac Toe</h1>
+        </div>
+    </nav>
+
+    <div class="container" id="container">
+        <div class="player-turn">
+            <span class="slider" id="check"></span>
+            <span class="x-turn">× Turn</span>
+            <span class="o-turn"><span class="textCrcl">○</span> Turn</span>
+        </div>
+        <section class="game">
+            <div class="player1">
+                <span id="player1-score">Player 1(×) <br> 0</span>
+            </div>
+            <div class="grid">
+                <div class="grid-container">
+                    <div class="firstCol">
+                        <ul class="gridCols">
+                            <li><button class="grid-btn btn-hover1" id="one" onclick="ticTacToe(1)"><span
+                                        class="btntext" id="btn1"></span></button></li>
+                            <li><button class="grid-btn btn-hover1" id="four" onclick="ticTacToe(4)"><span
+                                        class="btntext" id="btn4"></span></button></li>
+                            <li><button class="grid-btn btn-hover1" id="seven" onclick="ticTacToe(7)"><span
+                                        class="btntext" id="btn7"></span></button></li>
+                        </ul>
+                    </div>
+                    <div class="secondCol">
+                        <ul class="gridCols">
+                            <li><button class="grid-btn btn-hover1" id="two" onclick="ticTacToe(2)"><span
+                                        class="btntext" id="btn2"></span></button></li>
+                            <li><button class="grid-btn btn-hover1" id="five" onclick="ticTacToe(5)"><span
+                                        class="btntext" id="btn5"></span></button></li>
+                            <li><button class="grid-btn btn-hover1" id="eight" onclick="ticTacToe(8)"><span
+                                        class="btntext" id="btn8"></span></button></li>
+                        </ul>
+                    </div>
+                    <div class="thirdCol">
+                        <ul class="gridCols">
+                            <li><button class="grid-btn btn-hover1" id="three" onclick="ticTacToe(3)"><span
+                                        class="btntext" id="btn3"></span></button></li>
+                            <li><button class="grid-btn btn-hover1" id="six" onclick="ticTacToe(6)"><span
+                                        class="btntext" id="btn6"></span></button></li>
+                            <li><button class="grid-btn btn-hover1" id="nine" onclick="ticTacToe(9)"><span
+                                        class="btntext" id="btn9"></span></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="player2">
+                <span id="player2-score">Player 2(<span class="textCrcl">○</span>) <br> 0</span>
+            </div>
+        </section>
+    </div>
+    <div class="newgame">
+        <div id="result-reset">
+            <section class="result" id="result"></section>
+            <section class="bottom-btn">
+                <button type="button" class="function-btn" id="new-game" onclick="reset(1)">New Game</button>
+                <button type="button" class="function-btn" id="reset" onclick="reset(2)">Reset</button>
+            </section>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
